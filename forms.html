@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h1 align="center">Forms</h1>
+    <form action="" method="">
+        <table align="center" border="1" style="border: 3px solid black;" bgcolor="lightblue">
+            <tr>
+                <td><label for="name">Name</label></td>
+                <td><input type="text" id="name" style="border-radius: 5px; width: 90%; height: 25px;" minlength="15" maxlength="30" required placeholder="Enter Your Name"></td>
+            </tr>
+            <tr>
+                <td><label for="pass">Password</label></td>
+                <td><input type="password" required maxlength="10" placeholder="Enter Password" style="width: 90%;border-radius: 5px; height: 25px;">
+                </td>
+            </tr>
+            <tr>
+                <td>Enter number</td>
+                <td><input type="number" placeholder="Enter number" minlength="10" maxlength="10" style="width: 90%;border-radius: 5px; height: 25px;"></td>
+            </tr>
+            <tr>
+                <td>Enter DOB</td>
+                <td><input type="date" placeholder="DD-MM-YYYY" style="width: 90%;border-radius: 5px; height: 25px;"></td>
+            </tr>
+
+            <tr>
+                <td><label for="check">Select hobbies</label></td>
+                <td>
+                    <input type="checkbox" value="cricket" checked>Cricket
+                    <input type="checkbox" value="football">Football
+                    <input type="checkbox" value="chess">Chess
+                    <input type="checkbox" value="hockey">Hockey
+                </td>
+            </tr>
+            <tr>
+                <td>Education Qualification</td>
+                <td>
+                    <input type="radio" value="post-gra" name="edu">Post Graduate
+                    <input type="radio" value="gra" name="edu">Graduate
+                    <input type="radio" value="un-gra" name="edu">Under Graduate
+                </td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" value="male" name="gen">Male
+                    <input type="radio" value="female" name="gen">Female
+                </td>
+            </tr>
+            <tr>
+                <td>Select Your preferred Job Location</td>
+                <td>
+                    <select multiple>
+                        <option value="jaipur">jaipur</option>
+                        <option value="mumbai">Mumbai</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Banglore">Banglore</option>
+                        <option value="Kota">Kota</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Select file</td>
+                <td>
+                    <input type="file" value="Browse">
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center"><input type="submit" value="Register" style="height: 50px; font-size: 16px; font-weight: 700; border-radius: 10px;"></td>
+            </tr>
+
+        </table>
+    </form>
+</body>
+
+</html>
