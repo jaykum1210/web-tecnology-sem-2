@@ -1,0 +1,110 @@
+body
+{
+    background-color:wheat;
+}
+h1{
+    color: blue;
+}
+#Maindiv
+{
+    height: 1200px;
+    width: 1000px;
+    background-color:grey;
+    margin-left: 150px;
+    margin-top: -6px;
+}
+
+#CompnayLogodiv
+{
+    height: 150px;
+    width: 1000px;
+    background-color:darkcyan;
+}
+#logodiv
+{
+    height: 150px;
+    width: 300px;
+    background-color: gold;
+    float: left;
+}
+#compnaydiv
+{
+    height: 150px;
+    width: 700px;
+    background-color: lightblue;
+    float: left;
+}
+
+#menudiv
+{
+    height: 30px;
+    width: 1000px;
+    background-color:cadetblue;
+}
+#menudiv ul
+{
+    margin-top: 0px;
+}
+#menudiv ul li
+{
+    list-style: none;
+    display: inline;
+    padding-left: 20px;
+    padding-right: 25px;
+}
+
+#menudiv ul li a
+{
+text-decoration: none;
+font-size:larger;
+}
+#menudiv ul li a:hover
+{
+    background-color: chartreuse;
+}
+
+#menudiv ul li a:active
+{
+    
+    background-color: whitesmoke;
+}
+
+#menudiv ul li a::after
+{
+    background-color: chocolate;
+}
+
+.test{
+    background-color: white;
+}
+#login{
+    display: flex;
+    background-color: rebeccapurple;
+    width: 100%;
+    text-align: center;
+}
+#login1{
+    background-color: red;
+    height: 600px;
+    width: 33%;
+}
+.logon-area{
+    height: 50%;
+}
+#logon1{
+    height: 50%;
+    background-color: white;
+}
+#logon2{
+    background-color: green;
+}
+#login2{
+    background-color: aqua;
+    width: 33%;
+    height: 600px;
+}
+#login3{
+    background-color: gold;
+    width: 34%;
+    height: 600px;
+}
