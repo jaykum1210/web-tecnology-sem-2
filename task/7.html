@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="7.css">
+</head>
+
+<body>
+    <div id="big-box">
+        <nav>
+            <div id="nav-head">
+                <span id="nav-logo">ALMS</span>
+                <span id="nav-heading">Alumni Management System</span>
+            </div>
+        </nav>
+        <div id="head">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Course</a></li>
+                <li><a href="">Student</a></li>
+                <li><a href="">Alumni</a></li>
+                <li><a href="">Event</a></li>
+                <li><a href="">Requirement</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Profile</a></li>
+                <li><a href="">Report</a></li>
+                <li><a href="">Logout</a></li>
+            </ul>
+000        </div>
+        <main>
+            <div id="main-1">
+                <a href="">Add Student Update Student</a>
+            </div>
+            <div id="forms">
+                <fieldset>
+                    <legend>Student Registration</legend>
+                    <form>
+                        <table>
+                            <tr>
+                                <td>
+                                    <label for="fname">First Name :</label>
+                                </td>
+                                <td>
+                                    <input type="text" id="fname" required>
+                                </td>
+                                <td>
+                                    <label for="mname">Middle name :</label>
+                                </td>
+                                <td>
+                                    <input type="text" id="mname">
+                                </td>
+                                <td>
+                                    <label for="lname">Last name :</label>
+                                </td>
+                                <td>
+                                    <input type="text" id="lname" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="faname">Father Name :</label>
+                                </td>
+                                <td>
+                                    <input type="text" id="faname">
+                                </td>
+                                <td>
+                                    <label for="moname">Mother Name :</label>
+                                </td>
+                                <td>
+                                    <input type="text" id="moname">
+                                </td>
+                                <td>
+                                    <label>Gender</label><br>
+                                </td>
+                                <td>
+                                    <input type="radio" id="male" name="Gender" value="Male">
+                                    <label for="male">Male</label>
+                                    <input type="radio" id="female" name="Gender" value="Female">
+                                    <label for="female">Female</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="dob">DOB</label>
+                                </td>
+                                <td>
+                                    <input type="date" id="dob" required>
+                                </td>
+                                <td>
+                                    <label for="mail">Email id :</label>
+                                </td>
+                                <td>
+                                    <input type="email" id="mail">
+                                </td>
+                                <td>
+                                    <label for="num">Mobile No. :</label>
+                                </td>
+                                <td>
+                                    <input type="number" maxlength="10" id="num">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="pnum">Phone No. :</label>
+                                </td>
+                                <td>
+                                    <input type="number" maxlength="10" id="pnum">
+                                </td>
+                                <td>
+                                    <label for="fnum">Father No. :</label>
+                                </td>
+                                <td>
+                                    <input type="number" maxlength="10" id="fnum">
+                                </td>
+                                <td>
+                                    <label for="category">Category :</label>
+                                </td>
+                                <td>
+                                    <select id="category" style="width: 70%;">
+                                        <option value="general">General</option>
+                                        <option value="obc">OBC</option>
+                                        <option value="ST">ST</option>
+                                        <option value="SC">SC</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="padd">Permanent Address :</label>
+                                </td>
+                                <td>
+                                    <textarea style="overflow: scroll;"></textarea>
+                                </td>
+                                <td>
+                                    <label for="ladd">Local Address :</label>
+                                </td>
+                                <td>
+                                    <textarea style="overflow: scroll;"></textarea>
+                                </td>
+                                <td>
+                                    <label for="img-path">Image Path :</label>
+                                </td>
+                                <td>
+                                    <input type="text" id="img-path">
+                                    <button>Browse...</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="colcode">College Code :</label>
+                                </td>
+                                <td>
+                                    <input type="number" id="colcode">
+                                </td>
+                                <td>
+                                    <label for="corid">Course Id :</label>
+                                </td>
+                                <td>
+                                    <input type="text" id="corid">
+                                </td>
+                                <td>
+                                    <label for="year">Year :</label>
+                                </td>
+                                <td>
+                                    <select style="width: 70%;">
+                                        <option>1st Year</option>
+                                        <option>2nd Year</option>
+                                        <option>3rd Year</option>
+                                        <option>4th Year</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="semester">Semester :</label>
+                                </td>
+                                <td>
+                                    <select id="semester" style="width: 100%;">
+                                        <option value="1st">1st</option>
+                                        <option value="2nd">2nd</option>
+                                        <option value="3rd">3rd</option>
+                                        <option value="4th">4th</option>
+                                        <option value="5th">5th</option>
+                                        <option value="6th">6th</option>
+                                        <option value="7th">7th</option>
+                                        <option value="8th">8th</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <label for="un-en-no">University Enrollment No :</label>
+                                </td>
+                                <td>
+                                    <input type="number" id="un-en-no">
+                                </td>
+                                <td>
+                                    <label for="co-en-no">College Enrollment No :</label>
+                                </td>
+                                <td>
+                                    <input type="number" id="co-en-no">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="Date">Date :</label>
+                                </td>
+                                <td>
+                                    <input type="date" id="Date">
+                                </td>
+                            </tr>
+                            <tr id="last-row">
+                                <td>
+                                    <button type="submit">Save</button>
+                                </td>
+                                <td>
+                                    <button type="reset">Cancel</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </fieldset>
+            </div>
+        </main>
+        <footer>
+            <p>All Right Reserved 2025</p>
+        </footer>
+    </div>
+</body>
+</html>

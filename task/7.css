@@ -1,0 +1,56 @@
+#big-box{
+    justify-self: center;
+    align-self: center;
+    width: 80vw;
+    border: 2px solid lightblue;
+}
+nav{
+    height: 150px;
+    border:1px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+}
+#nav-logo{
+    padding: 30px 20px;
+    font-size: 32px;
+    border: 1px solid black;
+    border-radius: 50%;
+    color: rgb(39, 39, 39);
+}
+#nav-heading{
+    color: blue;
+    font-size: 36px;
+    border-bottom: 2px solid red;
+}
+
+#head ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0%;
+    padding: 20px;
+}
+#head ul a{
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    border: 1px solid transparent;
+}
+#head ul a:hover{
+    border: 1px solid blue;
+    padding: 5px;
+}
+
+main{
+    border: 1px solid blue;
+    display: flex;
+}
+#main-1{
+    width: 10%;
+    padding-top: 50px;
+}
+#forms{
+    line-height: 2;
+}
