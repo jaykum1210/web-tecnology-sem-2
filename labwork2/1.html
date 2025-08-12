@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Table</title>
+    <style>
+        table {
+            text-align: center;
+            width: 90vw;
+        }
+
+        th,tr {
+            width: 300px;
+            height: 90px;
+        }
+
+        .top td div{
+            display: flex;
+            justify-content: space-around;
+        }
+        tr {
+            height: 30px;
+        }
+        .digital{
+            background-color: cadetblue;
+        }
+        .toc{
+            background-color: aqua;
+        }
+        .web, .web-lab{
+            background-color: lightblue;
+        }
+        .operating, .operating-lab{
+            background-color: lightgray;
+        }
+        .dsa-lab, .dsa{
+            background-color: rgb(246, 175, 213);
+        }
+        .rdbms-lab, .rdbms{
+            background-color: chocolate;
+        }
+        .mooc{
+            background-color: rgb(97, 242, 97);
+        }
+        .segc, .crt{
+            background-color: palegoldenrod;
+        }
+    </style>
+</head>
+
+<body>
+    <table border="1" style="border-collapse: collapse;">
+        <tr style="font-weight: 800; background-color: rgb(145, 255, 145);">
+            <td colspan="8">TIME TABLE (B.Tech Sen III Sem Sec - E), 2025-26</td>
+        </tr>
+        <tr class="top">
+            <td colspan="8">
+                <div>
+                    <div>Lab Location: 508 A</div>
+                    <div>No. of Students: 39</div>
+                    <div>Tutor: Mr Prakhar Dixit</div>
+                </div>
+            </td>
+        </tr>
+        <tr id="time">
+            <th style="font-size: 20px;">Period /Day</th>
+            <th>8:00-9:00</th>
+            <th>9:00-10:00</th>
+            <th>10:00-11:00</th>
+            <th>11:00-12:00</th>
+            <th>12:00-1:00</th>
+            <th>1:00-2:00</th>
+            <th>2:00-3:00</th>
+        </tr>
+        <tr>
+            <th>MONDAY</th>
+            <td class="digital">
+                <div>BUVCVD3101</div>
+                <div>Digital Marketing</div>
+                <div>Mr. Prakhar Dixit</div>
+            </td>
+            <td class="toc">
+                <div>BCEECE3111</div>
+                <div>Theory Of Computation</div>
+                <div>Mr. Vikas Kumar</div>
+            </td>
+            <td class="web">
+                <div>BCECCE3101</div>
+                <div>Introduction to Web Technology</div>
+                <div>Mr. Harish Panmani</div>
+            </td>
+            <td class="operating">
+                <div>BCECCE3103</div>
+                <div>Operating System</div>
+                <div>Ms. Shakshi Ranawat</div>
+            </td>
+            <td id="lunch" rowspan="5">LUNCH</td>
+            <td class="dsa-lab" colspan="2">
+                <div>BCECCE3202</div>
+                <div>Data Structure and Algorithm Lab</div>
+                <div>Mr. Ankit Khandelwal</div>
+            </td>
+        </tr>
+        <tr>
+            <th>TUESDAY</th>
+            <td class="web">
+                <div>BCECCE3101</div>
+                <div>Introduction to Web Technology</div>
+                <div>Mr. Harish Panmani</div>
+            </td>
+            <td class="operating">
+                <div>BCECCE3103</div>
+                <div>Operating System</div>
+                <div>Ms. Shakshi Ranawat</div>      
+            </td>
+            <td class="rdbms-lab" colspan="2">
+                <div>BCECCE3204</div>
+                <div>Relational Database Management System Lab</div>
+                <div>Mr. Arnab Das</div>
+            </td>
+            <td class="digital">
+                <div>BUVCVD3101</div>
+                <div>Digital Marketing</div>
+                <div>Mr. Prakhar Dixit</div>
+            </td>
+            <td class="dsa">
+                <div>BCECCE3102</div>
+                <div>Data Structures and Algorithm</div>
+                <div>Mr. Ankit Khandelwal</div>
+            </td>
+        </tr>
+        <tr>
+            <th>WEDNESDAY</th>
+            <td class="operating">
+                <div>BCECCE3103</div>
+                <div>Operating System</div>
+                <div>Ms. Shakshi Ranawat</div>
+            </td>
+            <td class="web-lab" colspan="2">
+                <div>BCECCE3201</div>
+                <div>Introduction To Web Technology Lab</div>
+                <div>Mr. Harish Panmani</div>
+            </td>
+            <td class="rdbms">
+                <div>BCECCE3104</div>
+                <div>Relational Database Management System</div>
+                <div>Mr. Arnab Das</div>
+            </td>
+            <td class="segc" colspan="2">
+                <div>BULCSE3201</div>
+                <div>Technical/SEGC</div>
+                <div>T3 (405)</div>
+            </td>
+        </tr>
+        <tr>
+            <th>THURSDAY</th>
+            <td class="dsa">
+                <div>BCECCE3202</div>
+                <div>Data Structure and Algorithm Lab</div>
+                <div>Mr. Ankit Khandelwal</div>
+            </td>
+            <td class="rdbms">
+                <div>BCECCE3104</div>
+                <div>Relational Database Management System</div>
+                <div>Mr. Arnab Das</div>
+            </td>
+            <td class="mooc">
+                <div></div>
+                <div>MOOC Course - III</div>
+                <div>Mr. Arnab Das</div>
+            </td>
+            <td class="toc">
+                <div>BCEECE3111</div>
+                <div>Theory Of Computation</div>
+                <div>Mr. Vikas Kumar</div>
+            </td>
+            <td class="crt" colspan="2">
+                <div>BUACHM3209</div>
+                <div>CRT / Professional Skills-I</div>
+                <div>T1 (G-41)</div>
+            </td>
+        </tr>
+        <tr>
+            <th>FRIDAY</th>
+            <td class="web">
+                <div>BCECCE3101</div>
+                <div>Introduction to Web Technology</div>
+                <div>Mr. Harish Panmani</div>
+            </td>
+            <td class="toc">
+                <div>BCEECE3111</div>
+                <div>Theory Of Computation</div>
+                <div>Mr. Vikas Kumar</div>
+            </td>
+            <td class="dsa">
+                <div>BCECCE3202</div>
+                <div>Data Structure and Algorithm</div>
+                <div>Mr. Ankit Khandelwal</div>
+            </td>
+            <td class="rdbms">
+                <div>BCECCE3104</div>
+                <div>Relational Database Management System</div>
+                <div>Mr. Arnab Das</div>
+            </td>
+            <td class="operating-lab" colspan="2">
+                <div>BCECCE3203</div>
+                <div>Operating System Lab</div>
+                <div>Ms. Shakshi Ranawat</div>
+            </td>
+        </tr>
+        <tr>
+            <th>SATURDAY</th>
+            <td id="sat" colspan="7">OFF</td>
+        </tr>
+    </table>
+</body>
+
+</html>
