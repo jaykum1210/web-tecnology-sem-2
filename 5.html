@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>PHP File Manipulation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        textarea {
+            width: 100%;
+            height: 120px;
+            margin-bottom: 10px;
+        }
+        input[type="submit"] {
+            padding: 10px;
+            margin: 5px;
+            cursor: pointer;
+        }
+        .output {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+
+<h2>PHP Script File Manipulation (Create, Write, Append, Read)</h2>
+
+<form method="post">
+    <textarea name="file-content" placeholder="Enter text to write or append..."></textarea><br>
+    <input type="submit" name="create_write" value="Create & Write File">
+    <input type="submit" name="append" value="Append to File">
+    <input type="submit" name="read" value="Read File">
+</form>
+
+<?php
+$filename = "example.txt";
+$message = "";
+$file_data = "";
+
+// --- CREATE & WRITE TO FILE ---
+if (isset($_POST['create_write'])) {
+    $file_content = $_POST['file-content'] ?? "Default content";
+
+    $file = fopen($filename, "w") or die("Unable to open file!");
+    fwrite($file, $file_content);
+    fclose($file);
+
+    $message = "File created/written successfully!";
+}
+
+// --- APPEND TO FILE ---
+if (isset($_POST['append'])) {
+    $content = $_POST['file-content'] ?? "";
+
+    $file = fopen($filename, "a") or die("Unable to open file!");
+    fwrite($file, "\n" . $content);
+    fclose($file);
+
+    $message = "Content appended successfully!";
+}
+
+// --- READ FILE ---
+if (isset($_POST['read'])) {
+    if (file_exists($filename)) {
+        $file_data = file_get_contents($filename);
+    } else {
+        $file_data = "File does not exist!";
+    }
+}
+?>
+
+<?php if (!empty($message)) { ?>
+    <div class="output"><strong><?php echo htmlentities($message); ?></strong></div>
+<?php } ?>
+
+<?php if (!empty($file_data)) { ?>
+    <div class="output">
+        <h3>File Contents</h3>
+        <pre><?php echo htmlentities($file_data); ?></pre>
+    </div>
+<?php } ?>
+
+</body>
+</html>

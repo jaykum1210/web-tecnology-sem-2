@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile Page</title>
+    <!-- Load Tailwind CSS for modern styling and responsiveness (used for general structure) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /*
+        =========================================================
+        CSS STYLES
+        Based on the handwritten notes and combined into a <style> block.
+        =========================================================
+        */
+
+        /* Base styles from notes, adapted for modern context */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7; /* Lighter background than #fff */
+            padding: 20px;
+        }
+
+        /* Profile form container styling (equivalent to .profile-form from notes) */
+        .profile-form {
+            background-color: #ffffff;
+            max-width: 450px; /* Slightly increased width for better readability */
+            margin: 40px auto;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Heading style (profile-form h2 from notes) */
+        .profile-form h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #333;
+            font-size: 1.75rem; /* Larger font size for prominence */
+        }
+
+        /* Label styling (profile-form label from notes) */
+        .profile-form label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+            color: #555;
+            margin-bottom: 5px; /* Added margin for spacing */
+        }
+        
+        /* Input styling for text and email (profile-form input[type="text"] / [type="email"] from notes) */
+        .profile-form input[type="text"],
+        .profile-form input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            box-sizing: border-box; /* Important for padding/width calculation */
+            transition: border-color 0.2s;
+        }
+
+        .profile-form input[type="text"]:focus,
+        .profile-form input[type="email"]:focus {
+            border-color: #4285f4; /* Google Blue focus color */
+            outline: none;
+        }
+
+        /* Group container for radio/checkbox (.radio-group, .checkbox-group from notes) */
+        .radio-group,
+        .checkbox-group {
+            margin-top: 10px;
+            display: flex; /* Use flex for horizontal layout */
+            gap: 15px; /* Spacing between options */
+            flex-wrap: wrap; /* Allows wrapping on smaller screens */
+        }
+        
+        /* Specific label styling inside groups (.radio-group label, .checkbox-group label from notes) */
+        .radio-group label,
+        .checkbox-group label {
+            display: flex; 
+            align-items: center;
+            font-weight: normal; /* Normal font weight for option labels */
+            margin-top: 0;
+            cursor: pointer;
+            color: #333;
+            margin-right: 10px; /* Equivalent to margin-right: 10px from notes */
+        }
+
+        .radio-group input,
+        .checkbox-group input {
+            margin-right: 8px;
+        }
+
+        /* Submit Button styling (button from notes) */
+        button[type="submit"] {
+            margin-top: 25px;
+            padding: 10px 20px;
+            background-color: #4285f4; /* Google Blue */
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 6px;
+            width: 100%; /* Full width button */
+            transition: background-color 0.2s, box-shadow 0.2s;
+            font-weight: bold;
+        }
+
+        /* Button hover styling (button:hover from notes) */
+        button[type="submit"]:hover {
+            background-color: #357ae8; /* Darker blue on hover */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <!--
+    =========================================================
+    HTML STRUCTURE
+    Uses the div class="profile-form" as in the notes.
+    =========================================================
+    -->
+    <div class="profile-form">
+        <h2>My Profile</h2>
+        <form action="#" method="post">
+
+            <!-- Full Name Text Box -->
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <!-- Email Text Box -->
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <!-- Gender Radio Buttons -->
+            <label>Gender</label>
+            <div class="radio-group">
+                <label>
+                    <input type="radio" name="gender" value="male"> Male
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="female"> Female
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="other"> Other
+                </label>
+            </div>
+
+            <!-- Hobbies Check Boxes -->
+            <label>Hobbies</label>
+            <div class="checkbox-group">
+                <label>
+                    <input type="checkbox" name="hobby" value="reading"> Reading
+                </label>
+                <label>
+                    <input type="checkbox" name="hobby" value="travelling"> Travelling
+                </label>
+                <label>
+                    <input type="checkbox" name="hobby" value="music"> Music
+                </label>
+                <label>
+                    <input type="checkbox" name="hobby" value="sports"> Sports
+                </label>
+            </div>
+            
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+            
+        </form>
+    </div>
+
+</body>
+</html>

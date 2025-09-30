@@ -1,0 +1,80 @@
+/* Background */
+body {
+    background-image: url('https://www.transparenttextures.com/patterns/cubes.png'); /* Example image */
+    background-repeat: repeat;   /* repeats the image */
+    background-size: cover;      /* scales image to cover the page */
+    background-attachment: fixed;
+    background-color: #e0fafa;
+    padding: 30px;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation bar */
+nav {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+/* Link styles */
+a.custom-link:link {
+    cursor: url('https://cdn-icons-png.flaticon.com/512/32/32195.png'), pointer;
+}
+
+a.custom-link:visited {
+    color: #d4a5ff;
+    cursor: url('https://cdn-icons-png.flaticon.com/512/32/32195.png'), pointer;
+}
+
+a.custom-link:hover {
+    background: #ff5252;
+    color: #fff;
+    cursor: url('https://cdn-icons-png.flaticon.com/512/32/32195.png'), pointer;
+}
+
+a.custom-link:active {
+    background: #2ecc71;
+    color: #fff;
+    cursor: url('https://cdn-icons-png.flaticon.com/512/32/32195.png'), pointer;
+}
+
+/* Smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Section styling */
+section {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+section h2 {
+    margin-top: 0;
+}

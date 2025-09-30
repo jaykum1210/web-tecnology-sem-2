@@ -1,0 +1,48 @@
+<?php
+// Set cookie expiration time to 1 year
+$cookieExpireTime = time() + (365 * 24 * 60 * 60);
+
+// Track visit count
+if (isset($_COOKIE["visit_count"])) {
+    $visitCount = $_COOKIE["visit_count"] + 1;
+} else {
+    $visitCount = 1;
+}
+setcookie("visit_count", $visitCount, $cookieExpireTime);
+
+// Track last visit time
+if (isset($_COOKIE["last_visit_time"])) {
+    $lastVisitTime = $_COOKIE["last_visit_time"];
+} else {
+    $lastVisitTime = "This is your first visit.";
+}
+$currentVisitTime = date("Y-m-d H:i:s");
+setcookie("last_visit_time", $currentVisitTime, $cookieExpireTime);
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Visit Tracker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        .tracker {
+            padding: 20px;
+            border: 1px solid #ccc;
+            background: #f0f0f0;
+            max-width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="tracker">
+        <h1>Welcome Back!</h1>
+        <p>You have visited this page <strong><?php echo $visitCount; ?></strong> times.</p>
+        <p>Last visited time: <strong><?php echo $lastVisitTime; ?></strong></p>
+    </div>
+</body>
+</html>
